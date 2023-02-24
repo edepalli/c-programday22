@@ -1,0 +1,15 @@
+// print factors count
+#include <stdio.h>
+int main() 
+{
+    int num,i,j=0;
+    printf("Enter a positive integer: ");
+    scanf("%d", &num);
+    for (i=1;i<=num;++i)
+	{ 
+            if ((num % i) == 0)
+			j++; 
+    }
+    printf("\ncount:%d",j);
+    return 0;
+}
